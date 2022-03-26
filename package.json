@@ -1,0 +1,53 @@
+{
+  "name": "te-reo-resources-node-hbs",
+  "version": "1.0.0",
+  "description": "A catalogue of resources for learning and practising te reo Māori, built using Node.js and HandleBars",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index --ignore data.json",
+    "lint": "eslint .",
+    "test": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hannah-robinson/te-reo-resources-node-hbs.git"
+  },
+  "keywords": [],
+  "author": "Hannah Robinson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hannah-robinson/te-reo-resources-node-hbs/issues"
+  },
+  "homepage": "https://github.com/hannah-robinson/te-reo-resources-node-hbs#readme",
+  "eslintConfig": {
+    "extends": "eda"
+  },
+  "jest": {
+    "watchPathIgnorePatterns": [
+      "data.json"
+    ]
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.12.0",
+    "eslint-config-eda": "^1.1.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^26.1.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.1",
+    "supertest": "^6.2.2"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  }
+}
