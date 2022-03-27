@@ -1,5 +1,7 @@
 <div class='container grid'>
   {{#each resources}}
+    {{#if isFree}}
     {{>resource-info}}
+    {{/if}}
   {{/each}}
 </div>

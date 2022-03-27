@@ -2,6 +2,7 @@ const express = require('express')
 const hbs = require('express-handlebars')
 
 const homeRoute = require('./routes/home')
+const freeRoute = require('./routes/free-resources')
 
 const server = express()
 module.exports = server
@@ -16,3 +17,4 @@ server.use(express.urlencoded({ extended: false }))
 
 // Routes/routers
 server.use('/', homeRoute)
+server.use('/free', freeRoute)
