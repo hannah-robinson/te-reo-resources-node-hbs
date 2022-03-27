@@ -5,7 +5,7 @@ const server = express()
 module.exports = server
 
 // Handlebars config
-server.engine('hbs', hbs({ extname: 'hbs' }))
+server.engine('hbs', hbs.engine({ extname: 'hbs' }))
 server.set('view engine', 'hbs')
 
 // Server config
