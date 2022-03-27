@@ -1,8 +1,11 @@
 const express = require('express')
 const router = express.Router()
+const resources = require('../data.json').resources
 
 router.get('/', (req, res) => {
-  const viewData = { greeting: 'Tēnā tātou!' }
+  const viewData = {
+    resources: resources,
+  }
   res.render('home', viewData)
 })
 

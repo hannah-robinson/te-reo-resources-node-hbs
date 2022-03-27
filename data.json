@@ -2,7 +2,7 @@
   "resources": [
     {
       "id": 1,
-      "name": "Te Aka Māori Dictionary (online version)",
+      "name": "Te Aka Māori Dictionary",
       "url": "https://maoridictionary.co.nz/",
       "image": "/images/te-aka.png",
       "description": "This is a great dictionary. It provides meanings, example sentences and audio so you can hear how to pronounce the word. There are also app versions of the dictionary that you can buy for iOS and Android.",
@@ -37,7 +37,7 @@
       "id": 4,
       "name": "Te Karere (video)",
       "url": "https://www.youtube.com/user/tekareremaorinews",
-      "image": "/images/te-aka.png",
+      "image": "/images/te-karere.png",
       "description": "This channel is great for practising listening in te reo Māori. You will learn vocabulary related to current events. The video version can be helpful because the visuals can give you context to help your understanding. Some segments also have English subtitles.",
       "cost": "free ❤️",
       "languageLevel": "intermediate+",
@@ -46,9 +46,9 @@
     },
     {
       "id": 4,
-      "name": "Te Karere (audio only)",
+      "name": "Te Karere (audio)",
       "url": "https://soundcloud.com/tekarere",
-      "image": "/images/te-aka.png",
+      "image": "/images/te-karere-audio.png",
       "description": "This channel is great for practising listening in te reo Māori. You will learn vocabulary related to current events. The audio version is great because you can listen while you are doing other things or as you go too sleep at night.",
       "cost": "free ❤️",
       "languageLevel": "intermediate+",
