@@ -177,7 +177,8 @@ h1 {
   color: hsl(var(--clr-dark));
   text-align: center;
   margin: 0;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 
 h2 {
@@ -403,4 +404,12 @@ footer a:focus {
 
 .card:hover {
   transform: scale(1.05);
+}
+
+.card img {
+  padding: 1rem;
+}
+
+.card-details {
+  padding-block: 1rem;
 }
