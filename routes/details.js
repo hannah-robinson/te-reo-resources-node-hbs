@@ -1,10 +1,10 @@
 const express = require('express')
 const router = express.Router()
-const { loadResources } = require('../lib')
 // const resources = require('../data.json').resources
+const { loadResources } = require('../lib')
 
-router.get('/:id', (req, res) => {
-  loadResources('../data.json', (err, data) => {
+router.get('/details/:id', (req, res) => {
+  loadResources('./data.json', (err, data) => {
     if (err != null) {
       res.sendStatus(500)
       return

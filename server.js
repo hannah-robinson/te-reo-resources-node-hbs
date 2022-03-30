@@ -18,5 +18,5 @@ server.use(express.urlencoded({ extended: false }))
 
 // Routes/routers
 server.use('/', homeRoute)
-server.use('/free', freeRoute)
-server.use('/:id', detailsRoute)
+server.use('/', freeRoute)
+server.use('/', detailsRoute)

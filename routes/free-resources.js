@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 const resources = require('../data.json').resources
 
-router.get('/', (req, res) => {
+router.get('/free', (req, res) => {
   const viewData = {
     resources: resources,
   }
