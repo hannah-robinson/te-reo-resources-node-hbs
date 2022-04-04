@@ -12,4 +12,15 @@ function loadResources(fileName, callback) {
   })
 }
 
-module.exports = { loadResources }
+function saveResources(data, callback) {
+  const resourcesString = JSON.stringify(data, null, 2)
+  fs.writeFile(path.resolve('./data.json'), resourcesString, (err) => {
+    if (err) {
+      callback(err)
+      return
+    }
+    callback()
+  })
+}
+
+module.exports = { loadResources, saveResources }

@@ -1,33 +1,46 @@
-<div class='card'>
-  <form action='post'>
-    <label for='name'>
-      Name:
-      <input type='text' name='name' value='{{name}}' />
-    </label>
-    <label for='imageUrl'>
-      URL for image:
-      <input type='text' name='image' value='{{image}}' />
-    </label>
-    <label for='description'>
-      Description:
-      <input type='text' name='description' value='{{description}}' />
-    </label>
-    <label for='name'>
-      Language level:
-      <input type='text' value='{{languageLevel}}' />
-    </label>
-    <label for='medium'>
-      Type of resource/medium:
-      <input type='text' name='medium' value='{{medium}}' />
-    </label>
-    <label for='cost'>
-      Cost:
-      <input type='text' name='cost' value='{{cost}}' />
-    </label>
-    <label for='url'>
-      Link to resource:
-      <input type='text' name='url' value='{{url}}' />
-    </label>
-    <button type='submit'>Submit</button>
-  </form>
-</div>
+<main>
+  {{! style='--max-width: 80%;' }}
+  <div class='card'>
+    <form class='form' action='/details/{{id}}/edit' method='post'>
+      <div class='row'>
+        <label for='name' class='form-item col-25'>
+          Name:
+        </label>
+        <input class='col-75' type='text' name='name' value='{{name}}' />
+      </div>
+      <div class='row'>
+        <label for='imageUrl' class='form-item'>
+          URL for image:
+          <input type='text' name='image' value='{{image}}' />
+        </label>
+      </div>
+      <div class='row'><label for='description' class='form-item'>
+          Description:
+          <input type='text' name='description' value='{{description}}' />
+        </label></div>
+      <div class='row'><label for='name' class='form-item'>
+          Language level:
+          <input type='text' value='{{languageLevel}}' />
+        </label></div>
+      <div class='row'><label for='medium' class='form-item'>
+          Type of resource/medium:
+          <input type='text' name='medium' value='{{medium}}' />
+        </label>
+      </div>
+      <div class='row'><label for='cost' class='form-item'>
+          Cost:
+          <input type='text' name='cost' value='{{cost}}' />
+        </label>
+      </div>
+      <div class='row'>
+        <label for='url' class='form-item'>
+          Link to resource:
+          <input type='text' name='url' value='{{url}}' />
+        </label>
+      </div>
+      <div class='row'>
+        <input id='submit' type='submit' name='' value='Submit' />
+      </div>
+    </form>
+  </div>
+</main>
