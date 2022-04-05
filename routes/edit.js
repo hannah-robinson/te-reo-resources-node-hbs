@@ -25,7 +25,7 @@ router.get('/details/:id/edit', (req, res) => {
 })
 
 router.post('/details/:id/edit', (req, res) => {
-  loadResources('./data.json', (err, data, req) => {
+  loadResources('./data.json', (err, data) => {
     if (err != null) {
       res.sendStatus(500)
       return
