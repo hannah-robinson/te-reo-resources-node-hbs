@@ -19,6 +19,7 @@ router.get('/details/:id/edit', (req, res) => {
       cost: resource.cost,
       languageLevel: resource.languageLevel,
       medium: resource.medium,
+      id: req.params.id,
     }
     res.render('edit', viewData)
   })
@@ -37,7 +38,7 @@ router.post('/details/:id/edit', (req, res) => {
     resource.image = req.body.image
     resource.url = req.body.url
     resource.description = req.body.description
-    resource.cost = req.body.v
+    resource.cost = req.body.cost
     resource.languageLevel = req.body.languageLevel
     resource.medium = req.body.medium
 
