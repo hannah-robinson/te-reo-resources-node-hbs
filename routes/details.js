@@ -20,6 +20,7 @@ router.get('/details/:id', (req, res) => {
       cost: resource.cost,
       languageLevel: resource.languageLevel,
       medium: resource.medium,
+      id: req.params.id,
     }
     res.render('details', viewData)
   })
