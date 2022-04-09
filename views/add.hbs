@@ -1,0 +1,101 @@
+<main>
+  {{! style='--max-width: 80%;' }}
+  <div class='card'>
+    <form class='form' action='/add' method='post'>
+      <div class='row'>
+        <label for='name' class='form-item col-25'>
+          Name:
+        </label>
+        <input
+          id='name'
+          class='col-75'
+          type='text'
+          name='name'
+          required
+          aria-label='required'
+          value='{{name}}'
+        />
+      </div>
+      <div class='row'>
+        <label for='imageUrl' class='form-item'>
+          URL for image:
+        </label>
+        <input
+          id='imageUrl'
+          type='text'
+          name='image'
+          required
+          aria-label='required'
+          value='{{image}}'
+        />
+      </div>
+      <div class='row'>
+        <label for='description' class='form-item'>
+          Description:
+        </label>
+        <input
+          id='description'
+          type='text'
+          name='description'
+          required
+          aria-label='required'
+          value='{{description}}'
+        />
+      </div>
+      <div class='row'>
+        <label for='level' class='form-item'>
+          Language level:
+        </label>
+        <input
+          id='level'
+          type='text'
+          required
+          aria-label='required'
+          value='{{languageLevel}}'
+        />
+      </div>
+      <div class='row'>
+        <label for='medium' class='form-item'>
+          Type of resource/medium:
+        </label>
+        <input
+          for='medium'
+          type='text'
+          name='medium'
+          required
+          aria-label='required'
+          value='{{medium}}'
+        />
+      </div>
+      <div class='row'>
+        <label for='cost' class='form-item'>
+          Cost:
+        </label>
+        <input
+          id='cost'
+          type='text'
+          name='cost'
+          required
+          aria-label='required'
+          value='{{cost}}'
+        />
+      </div>
+      <div class='row'>
+        <label for='url' class='form-item'>
+          Link to resource:
+        </label>
+        <input
+          id='url'
+          type='text'
+          name='url'
+          required
+          aria-label='required'
+          value='{{url}}'
+        />
+      </div>
+      <div class='row'>
+        <input id='submit' type='submit' name='' value='Submit' />
+      </div>
+    </form>
+  </div>
+</main>

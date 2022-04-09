@@ -5,6 +5,7 @@ const homeRoute = require('./routes/home')
 const freeRoute = require('./routes/free-resources')
 const detailsRoute = require('./routes/details')
 const editRoute = require('./routes/edit')
+const addRoute = require('./routes/add')
 
 const server = express()
 module.exports = server
@@ -22,3 +23,4 @@ server.use('/', homeRoute)
 server.use('/', freeRoute)
 server.use('/', detailsRoute)
 server.use('/', editRoute)
+server.use('/', addRoute)

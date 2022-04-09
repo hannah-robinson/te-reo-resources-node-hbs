@@ -7,6 +7,7 @@
       "image": "/images/te-aka.png",
       "description": "This is a great dictionary. It provides meanings, example sentences and audio so you can hear how to pronounce the word. There are also app versions of the dictionary that you can buy for iOS and Android.",
       "cost": "free",
+      "languageLevel": "beginner+",
       "medium": "website",
       "isFree": true
     },
@@ -16,7 +17,7 @@
       "url": "https://languagedrops.com/language/learn-maori",
       "image": "/images/drops.png",
       "description": "Learn 2,000+ Maori words with Drops.",
-      "cost": "free ❤️ or from NZ$9.33/month for premium",
+      "cost": "free or from NZ$9.33/month for premium",
       "languageLevel": "beginner+",
       "medium": "app",
       "isFree": false
@@ -39,6 +40,7 @@
       "image": "/images/te-karere.png",
       "description": "This channel is great for practising listening in te reo Māori. You will learn vocabulary related to current events. The video version can be helpful because the visuals can give you context to help your understanding. Some segments also have English subtitles.",
       "cost": "free",
+      "languageLevel": "intermediate+",
       "medium": "website",
       "isFree": true
     },
